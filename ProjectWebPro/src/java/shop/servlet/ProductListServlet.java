@@ -50,7 +50,7 @@ public class ProductListServlet extends HttpServlet {
         getServletContext().getRequestDispatcher("/ProductList.jsp").forward(request, response);
         
     }
-    }
+    
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
