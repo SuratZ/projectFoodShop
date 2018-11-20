@@ -4,9 +4,25 @@
         <servlet-name>ProductListServlet</servlet-name>
         <servlet-class>shop.servlet.ProductListServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>shop.servlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>shop.servlet.LogoutServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ProductListServlet</servlet-name>
         <url-pattern>/ProductList</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/Login</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/Logout</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
