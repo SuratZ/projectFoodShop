@@ -18,10 +18,10 @@
 
 
             <table id="example" class="table">
-                <thead>
+                  <thead>
                     <tr>
-                        <th>image</th>
                         <th>No</th>
+                        <th>image</th>                        
                         <th>Product ID</th>
                         <th>Product Name</th>                                            
                         <th>Price</th>
@@ -32,15 +32,17 @@
                 <c:forEach items="${product}" var="p" varStatus="vs">
                     
                     <tr>
-                        <td><img src="model-images/${p.product_id}.jpg" width="120"></td>
                         <td>${vs.count}</td>
-                        <td>Test${p.product_id}</td>
-                        <td>${p.product_name}</td>                       
+                        <td><img src="model-images/${p.productId}.jpg" width="120"></td>
+                        
+                        <td>${p.productId}</td>
+                        
+                        <td>${p.productName}</td>                       
                         <td>${p.price}</td>
                         
                         <td>
                             <form action="AddItemToCart" method="post">
-                                <input type="hidden" value="${p.product_id}" name="productCode"/>
+                                <input type="hidden" value="${p.productId}" name="productCode"/>
                                 <input type="submit" value="Add To Cart"/>
                             </form>
                         </td>
